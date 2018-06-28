@@ -4,3 +4,7 @@ go:
   - "1.10"
 
 #sudo: required
+
+make
+
+go test -v ./...
