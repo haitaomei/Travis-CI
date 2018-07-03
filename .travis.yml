@@ -3,8 +3,13 @@ language: go
 go:
   - "1.10"
 
-#sudo: required
+sudo: required
+services:
+  - docker
 
-make
-
-go test -v ./...
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: ./deploy.sh
+  on:
+    branch: master
