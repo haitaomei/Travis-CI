@@ -1,7 +1,7 @@
 #!/bin/bash
-docker login -u haitaomei -p galaxy123
+docker login -u khitaomei -p galaxy123
 
-docker build -t haitaomei/travis-ci:${TRAVIS_BUILD_NUMBER} .
-docker push haitaomei/travis-ci:${TRAVIS_BUILD_NUMBER}
-docker tag haitaomei/travis-ci:${TRAVIS_BUILD_NUMBER} haitaomei/travis-ci:latest
-docker push haitaomei/travis-ci:latest
+docker build -t khitaomei/travis-ci:${TRAVIS_BUILD_NUMBER} .
+docker push khitaomei/travis-ci:${TRAVIS_BUILD_NUMBER}
+docker tag khitaomei/travis-ci:${TRAVIS_BUILD_NUMBER} khitaomei/travis-ci:latest
+docker push khitaomei/travis-ci:latest
